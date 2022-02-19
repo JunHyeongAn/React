@@ -14,12 +14,13 @@
 <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script type="text/babel">
+    //state가 바뀌면 렌더링이 일어난다.
     const root = document.querySelector("#root");
     function App() {
         const [counter, setCounter] = React.useState(0);
         const onClick = () => {
             setCounter(counter+1);
-        }
+        };
         return(
             <div>
                 <h3>Total Clicks : {counter}</h3>
